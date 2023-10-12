@@ -252,7 +252,7 @@ void NvdecDevice::SlotManager::clean(const VAPictureH264 *refs, size_t num_refs)
     fprintf(stderr, "cleaning. left: ");
     for (size_t slot = 0; slot < slots.size(); slot++) {
         if (slots[slot] != VA_INVALID_SURFACE)
-            fprintf(stderr, "(pic=%d slot=%d) ", slots[slot], slot);
+            fprintf(stderr, "(pic=%d slot=%lu) ", slots[slot], slot);
     }
     fprintf(stderr, "\n");
 }

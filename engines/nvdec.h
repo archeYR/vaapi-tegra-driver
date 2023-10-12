@@ -27,6 +27,7 @@
 #include "../gem.h"
 #include <va/va_backend.h>
 #include <linux/kernel.h>
+#include <array>
 
 enum class NvdecCodec {
     MPEG2,
